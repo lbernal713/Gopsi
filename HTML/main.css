@@ -1,0 +1,58 @@
+body {
+	background: #B20018;
+	color:white;
+	font-family:system-ui;
+}
+h1	{
+	font-size:60px;
+	font-weight:lighter;
+}
+div.heading-text p{
+	font-size: 24px;
+}
+div.gopsi-pages, div.link-action-page, div.link-to-googledocs, div.link-injury-page, div.heading-text, div.current-record-block {
+	text-align: center
+}
+div.current-record-block h1{
+	font-size:50px
+}
+div.current-record{
+	font-size:50px;
+	color: black;
+	transition: 0.6s ease-out;
+}
+p	{
+	font-size:25;
+	font-weight:lighter;
+}
+
+p.spotify{
+	color:#10BC4C;
+}
+
+p.somerap{
+	color:#928557;
+	background: black;
+}
+
+a{
+}
+	/* unvisited link */
+a:link {
+  color:#FFD435;
+}
+
+/* visited link */
+a:visited {
+  color:#e6dc2c;
+}
+
+/* mouse over link */
+a:hover {
+  color: red;
+}
+
+/* selected link */
+a:active {
+  color: white;
+}
