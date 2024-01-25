@@ -1,1 +1,4 @@
 # Gopsi
+This is my personal webiste that I am trying to use to build my skills and just practice overall with whatever I like. I want to track some of my thoughts on NBA games and what I predict is going to happen. Eventually I want to build a web app that works much like ESPN or The Score which showcases stats. The main difference is that I want to show stats that I feel are more relevant to me.
+
+I want to implement a bunch of cool stuff, Spotify API's and some Data Analysis apps from R and build all sorts of good charts and tables to refer to. I have to build it slowly but I will continue to build on this as I go.  
