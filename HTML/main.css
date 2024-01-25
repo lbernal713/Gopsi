@@ -9,8 +9,15 @@ h1	{
 }
 div.heading-text p{
 	font-size: 24px;
+	max-width: 1238px;
+	text-align: center;
+	margin: 0 auto;
 }
-div.gopsi-pages, div.link-action-page, div.link-to-googledocs, div.link-injury-page, div.heading-text, div.current-record-block {
+div.gopsi-pages, div.heading-text, div.current-record-block {
+	text-align: center;
+}
+
+div.morning-obs-links{
 	text-align: center
 }
 div.current-record-block h1{
