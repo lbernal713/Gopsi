@@ -23,23 +23,42 @@
   </style>
 </head>
 <body>
-  <h1>To-Do List</h1>
-  <input type="text" id="taskInput" placeholder="Enter a new task">
-  <button onclick="addTask()">Add Task</button>
+  <div id ="To-do list">
+    <h1>To-Do List</h1>
+    <input type="text" id="taskInput" placeholder="Enter a new task">
+    <button onclick="addTask()">Add Task</button>
 
-  <div id="taskList">
-    <!-- Tasks will be added here dynamically -->
+    <div id="taskList">
+      <!-- Tasks will be added here dynamically -->
+    </div>
   </div>
-  <input type="file" id="fileInput" accept=".pdf">
-  <input type="color" id="colorInput">
-  <input type="date" id="dateInput">
-  <input type="time" id="timeInput">
-  <input type="range" id="rangeInput">
-  <input type="email" id="emailInput" placeholder="Email📧">
-  <input type="password" id="passwordInput" placeholder="Password🔐">
-  <input type="url" id="urlInput" placeholder="URL🌐">
-  <input type="search" id="search-box" placeholder="Search🔍"> 
+  <div id="practice">
+    <h1>Practice NBA Team List</h1>
+    <input type="text" id="nbaTeamInput" placeholder="Enter an NBA Team">
+    <button onclick="addTeam()">Add Team</button>
+
+    <div id="nbaTeamList">
+      <!-- NBA teams will be added here dynamically -->
+    </div>
+  </div>
   <script>
+    // Javascript function practice
+    function addTeam() {
+      var inputText = document.getElementById("nbaTeamInput").value;
+
+      var newTask2 = document.createElement("div");
+      newTask2.className = "nbaTeam";
+      newTask2.textContent = inputText;
+
+      newTask2.addEventListener("click", function() {
+        newTask2.classList.toggle("completed");
+      });
+      var nbaTeamList = document.getElementById("nbaTeamList");
+
+      nbaTeamList.appendChild(newTask2);
+      nbaTeamInput.value = "";
+    }
+
     // Function to add a new task
     function addTask() {
       // Accessing the input element
