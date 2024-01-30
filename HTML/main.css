@@ -7,13 +7,16 @@ h1	{
 	font-size:60px;
 	font-weight:lighter;
 }
+div.main-content h1{
+	text-align: center;
+}
 div.heading-text p{
 	font-size: 24px;
 	max-width: 1238px;
 	text-align: center;
 	margin: 0 auto;
 }
-div.gopsi-pages, div.heading-text, div.current-record-block {
+div.gopsi-pages, div.heading-text, div.current-record-block, div.bet-record-block {
 	text-align: center;
 }
 
@@ -21,10 +24,14 @@ div.morning-obs-links{
 	text-align: center
 }
 div.current-record-block h1{
-	font-size:50px
+	font-size:45px
 }
+div.bet-record-block h1{
+	font-size:45px
+}
+
 div.current-record{
-	font-size:50px;
+	font-size:45px;
 	color: black;
 	transition: 0.6s ease-out;
 }
