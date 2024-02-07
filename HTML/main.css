@@ -16,12 +16,16 @@ div.heading-text p{
 	text-align: center;
 	margin: 0 auto;
 }
-div.gopsi-pages, div.heading-text, div.current-record-block, div.bet-record-block {
+div.gopsi-pages, div.heading-text, div.current-record-block, div.bet-record-block, .morning-obs-desc {
 	text-align: center;
 }
 
-.gopsi-pages{
+.gopsi-pages, .morning-obs-desc{
 	color:#00f414d9;
+}
+
+.morning-obs-desc{
+	font-size: 20px;
 }
 
 div.morning-obs-links{
