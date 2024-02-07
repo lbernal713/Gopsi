@@ -16,10 +16,10 @@ const nbaTeam = {
     teamStateAbv: "CA"
 }
 
-const displayNbaTeam  = function(){
-    alert(nbaTeam.teamName + " " + nbaTeam.teamCity + ", " + nbaTeam.teamStateAbv);
-}
-displayNbaTeam();
+// const displayNbaTeam  = function(){
+//     alert(nbaTeam.teamName + " " + nbaTeam.teamCity + ", " + nbaTeam.teamStateAbv);
+// }
+// displayNbaTeam();
 
 nbaPlayer.salary = 1000000;
 
@@ -30,11 +30,11 @@ console.log(nbaPlayer);
 
 //nbaPlayerDribble();
 
-const nbaPlayerPass = function (nbaPlayer) {
-    console.log(nbaPlayer);
-    // alert("I am NBA player " + nbaPlayer.firstName + " " + nbaPlayer.lastName);
-    alert("I am NBA player " + nbaPlayer.firstName + " " + nbaPlayer.lastName + " " + nbaPlayer.salary);
-};
+// const nbaPlayerPass = function (nbaPlayer) {
+//     console.log(nbaPlayer);
+//     // alert("I am NBA player " + nbaPlayer.firstName + " " + nbaPlayer.lastName);
+//     alert("I am NBA player " + nbaPlayer.firstName + " " + nbaPlayer.lastName + " " + nbaPlayer.salary);
+// };
 
 //function being called with the nbaPlayer
 //nbaPlayerPass(nbaPlayer);

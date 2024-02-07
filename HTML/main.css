@@ -20,6 +20,10 @@ div.gopsi-pages, div.heading-text, div.current-record-block, div.bet-record-bloc
 	text-align: center;
 }
 
+.gopsi-pages{
+	color:#00f414d9;
+}
+
 div.morning-obs-links{
 	text-align: center
 }
@@ -44,14 +48,6 @@ p.spotify{
 	color:#10BC4C;
 }
 
-p.somerap{
-	color:#928557;
-	background: black;
-}
-
-a{
-}
-	/* unvisited link */
 a:link {
   color:#FFD435;
 }
@@ -69,4 +65,96 @@ a:hover {
 /* selected link */
 a:active {
   color: white;
+}
+
+body::before {
+content: "XS";
+color: red;
+font-size: 2rem;
+font-weight: bold;
+position: fixed;
+bottom: 0;
+right: 0;
+background-color: #71ffff;
+}
+
+/* This box class is purely used for explaining how the bootstrap grid system works. */
+.box {
+background-color: rgb(251, 89, 64);
+border: 1px solid rgb(75, 0, 0);
+min-height: 50px;
+font-size: 2rem;
+}
+
+@media (min-width: 576px) {
+body::before {
+	content: "SM";
+}
+}
+
+@media (min-width: 768px) {
+body::before {
+	content: "MD";
+}
+}
+
+@media (min-width: 992px) {
+body::before {
+	content: "LG";
+}
+}
+
+@media (min-width: 1200px) {
+body::before {
+	content: "XL";
+}
+}
+
+@media (min-width: 1400px) {
+body::before {
+	content: "XXL";
+}
+}
+
+/* This is used to fix columns and make join them closer */
+.row>*{
+	padding-right: 0.75px;
+    padding-left: 0.75px;
+}
+
+.navbar{
+	background: #B20018;
+	padding: 0;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+.navbar-nav .nav-link.active{
+	color: white;
+	background-color: #08cb63e7;
+	border: 3.5px ridge rgb(124, 4, 0);
+}
+.navbar-nav{
+	--bs-nav-link-hover-color: #08cb63e7;
+}
+
+.nav-link {
+	padding: 0.5px
+}
+
+.album-name {
+	background-color: rgb(52, 0, 0);
+	height: 300px;
+	font-size: 2rem;
+	text-align: center;
+	color:beige;
+}
+
+.album-name p {
+	font-size: 25px;
+}
+
+.card {
+	margin: 0 auto; /* Added */
+	float: none; /* Added */
+	margin-bottom: 10px; /* Added */
 }
