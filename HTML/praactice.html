@@ -3,7 +3,6 @@
 	<head>
 		<title>Gopsi</title>
 		<link href="main.css" rel="stylesheet" type="text/css" />
-		<script src="main.js" type="module"></script>
         <link rel="icon" type="image/x-icon" href="Photos\MJ23LarryO.jpg">
 	</head>
 
@@ -24,10 +23,37 @@
             <p>Last Name: </p>
             <p>Salary: </p>
         </div>
+        <div id="fruits-list">
+            <ol>
+                <li>
+                First Fruit
+                </li>
+                <li>
+                Second Fruit
+                </li>
+                <li>
+                Third Fruit
+                </li>
+            </ol>
+        </div>
         <div id ='inputs-practice'>
             <div id ='input_num1'>   
-                <input type="number" placeholder="First Number">
+                <input id="firstnum" type="number" placeholder="First Number">
             </div>
         </div>
+        <div id = "blog-content">
+            <div id="blog-post">
+            </div>
+            <div id = "blog-update-button">
+                <button onclick="updatetext()">Click here to add text</button>
+            </div>
+        </div>
+        <div id="form-practice">
+            <form>
+                <input type="text" id="first-name" placeholder="Enter your first name">
+                <input type="text" id="last-name" placeholder="Enter your last name">
+            </form>
+        </div>
+        <script src="main.js" defer></script>
 	</body>
 </html> 
