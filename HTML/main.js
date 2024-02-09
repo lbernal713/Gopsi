@@ -169,3 +169,31 @@ substract(a,b)
 // document.getElementById("input_num1").addEventListener("click",function(){
 //     alert("input text box clicked")
 // })
+
+
+//DOM practice
+//Listing out qll the windows properties
+// const list = document.getElementById("props");
+// let property = null
+
+// for(property in window){
+//     if(property){
+//         list.innerHTML +="<li>"+property;
+//     }
+// }
+
+
+const info = document.getElementById("props")
+let width = window.screen.width + ' px';
+let height = window.screen.height + ' px';
+let availW = window.screen.availWidth + ' px';
+let availH = window.screen.availHeight + ' px';
+let colors = 'Unknown';
+
+info.innerHTML = `Screen Resolution: ${width}x${height}<br>`
+info.innerHTML += `Available Screen Resolution: ${availW}x${availH}<br>`
+
+if(window.screen.orientation){
+    info.innerHTML += `Orientation ${window.screen.orientation.type}`
+}
+
