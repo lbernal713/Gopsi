@@ -1,0 +1,17 @@
+.card {
+    margin-bottom: 20px;
+  }
+  
+  .card-body {
+    text-align: center;
+  }
+  
+  .card-title {
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .player {
+    font-size: 0.9rem;
+  }
+  
