@@ -1,0 +1,64 @@
+<html>
+  <body>
+    <div id = "app">
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel Script -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/jsx">
+        const app = document.getElementById('app');
+
+        function createTitle(title){
+            if (title){
+                return title;
+            } else {
+                return 'Default Time'
+            }
+        }
+
+        function Header({title}) {
+            console.log(title);
+            return <h1>{createTitle(title)}</h1>;
+
+
+            return <h1>{title ? title:'Default Title'}</h1>;
+        };
+
+        function Article() {
+            return (
+                <article> 
+                    <p>
+                        Ayo what is yup dog?
+                    </p>
+                </article>
+            )
+        };
+
+        function HomePage(props){
+            const names = ['Lebron James','Kevin Durant','Chris Paul'];
+            const [likes, setLikes] = React.useState(0);
+
+            function handleClick(){
+                console.log('Increment Like Count +1');
+                setLikes(likes+1);
+            }
+
+            return (
+                <div>
+                    <Header title = "Gopsi-React" />
+                    <ul>
+                        {names.map((names) => (
+                            <li key={names}>{names}</li>
+                        ))}
+                    </ul>
+                    <button onClick={handleClick}>Like👍({likes})</button>
+                </div>
+            )
+        };
+
+        const root = ReactDOM.createRoot(app);
+        root.render(<HomePage />);
+    </script>
+    </div>
+  </body>
+</html>
