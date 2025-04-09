@@ -1,13 +1,7 @@
-a = input('Enter a number:')
-b = input('Now enter another number:')
-sum = a + b
-print('\nData Type sum:',sum,'Type:',type(sum))
+import requests
 
-sum = int(a) + int(b)
-print('Data Type sum:',sum, type(sum))
+response = requests.get("https://edition.cnn.com/business")
 
-sum = float(sum)
-print('Data Type sum:',sum, type(sum))
-
-sum = chr(int(sum))
-print('Data Type sum:',sum, type(sum))
+with open("content.html", "w") as f:
+    f.write(response.text)
+    
