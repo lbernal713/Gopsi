@@ -47,3 +47,30 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
   
+
+  console.log('Hello world');
+
+  const array1 = ['red','blue','green','black'];
+  const array2 = ['red','white','pink'];
+  const array3 = ['grey','yellow','blue','black'];
+  const array4 = ['white','violet','green'];
+  const combinedArr = [];
+  const colors = (parseInt(array1.length) + parseInt(array2.length) + parseInt(array3.length) + parseInt(array4.length))
+  console.log(colors)
+
+  for (let i = 0; i < array1.length; i++){
+    while (array1[i]!=combinedArr[i])
+      combinedArr.push(array1[i]);
+  };
+
+
+  console.log(combinedArr)
+
+  
+  // combine these arrays into one with no duplicates
+  // make a loop that goes through each of the elements in the arrays
+  // the loop will add them to the new array and if they are already there then skip it
+
+
+
+
